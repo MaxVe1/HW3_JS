@@ -116,3 +116,18 @@ myZoo.removeAnimal('Tiger');
 myZoo.showAnimals();
 myZoo.showWorkers();
 console.log(myZoo);
+
+const Wrapper = document.getElementById("root");
+const div = document.createElement("div");
+
+div.innerHTML += `
+    <p>Name: ${myZoo._name} </p>
+    <p>City: ${myZoo._address} </p>
+    <p>Area: ${myZoo._area} </p>
+    <p>Established date: ${myZoo._estdate} </p>
+    <p>Price: ${myZoo._price} </p>
+    <p>Animals: ${myZoo._animals} </p>
+    <p>Workers: ${myZoo._workers} </p> 
+`;
+
+Wrapper.append(div);
